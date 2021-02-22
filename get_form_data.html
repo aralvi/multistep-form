@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="name"></h1>
+    <h1 id="city"></h1>
+
+</body>
+<script>
+    var x = localStorage.getItem("FormData");
+    let showData = JSON.parse(x)[0].name;
+    let showcity = JSON.parse(x)[0].city;
+    document.getElementById("name").innerHTML = "Name :" + showData;
+    document.getElementById("city").innerHTML = "City :" + showcity;
+</script>
+
+</html>
